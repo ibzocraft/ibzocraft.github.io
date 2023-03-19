@@ -1,0 +1,308 @@
+/*Animations*/
+@keyframes Hover{
+    50% {transform:translateY(-2px)}
+}
+@keyframes LightHover{
+    50% {transform:translateY(-1px)}
+}
+@keyframes Title1Hover{
+    25% {transform:translateY(-10px);}
+    75% {transform:translateY(10px);}
+}
+@keyframes LightRotation{
+    25% {transform:rotate(10deg)}
+    75% {transform:rotate(-10deg)}
+}
+@keyframes Pulse{
+    0% {transform:rotate(2deg)}
+}
+@keyframes OpacityPulse{
+    50% {opacity: 0.8;}
+}
+@keyframes Greetings{
+    10% {transform:translateY(5em); opacity:1;}
+    75% {transform:translateY(5em); opacity:1;}
+}
+
+body {
+    background-color: #292929;
+    margin: 0px;
+}
+
+header {
+    width: auto;
+    height: 3vw;
+}
+
+label {
+    font-family:Verdana, Arial;
+}
+
+#TopBarFrame {
+    float: left;
+    background-color: white;
+    width: 25em;
+    height: 2em;
+    border-radius: 20px;
+    padding-top: 5px;
+    margin-left: 1vw;
+}
+
+.TopBarButton {
+    display: inline-block;
+    margin-top: 0.8%;
+    margin-right: 0px;
+
+    background-color: transparent;
+    border-style: none;
+
+    font-family:Verdana, Arial;
+    color: #cdcce4;
+}
+.TopBarDash {
+    display: inline-block;
+    margin-top: 0.6%;
+    margin-right: 0px;
+
+    background-color: transparent;
+    border-style: none;
+
+    font-family:Verdana, Arial;
+    font-size: 120%;
+    font-weight: bold;
+    color: black
+}
+
+#Ac{
+    font-size: 110%;
+    margin-left: 20px;
+}
+#De,#AP{
+    font-size: 110%;
+}
+#TopBarFrame .On{
+    color: #363131;
+}
+
+
+
+#MonumentsList {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    width: 35%;
+    height: 0em;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0vw;
+    margin-left: 31%;
+    position: relative;
+    z-index: 5;
+    transition: height 0.5s ease-out, margin-top 0.2s ease-out, all 0.5s ;
+}
+.MLItem {
+    flex: 1;
+    margin-bottom: 2%;
+}
+.MListButton {
+    margin-left: 2.5%;
+
+    background-color: #6a91dc;
+    border-style: none;
+    border-radius: 5px;
+    width: 95%;
+    height: 100%; /* 15% pour 6 sites(90/6) les 10 étant pour les marges*/
+    font-family:Verdana, Arial;
+}
+
+#Location {
+    float: right;
+    background-color: #292929;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    
+    font-family:Verdana, Arial;
+    text-align: center;
+    color: #e9f1ff;
+    font-size: 110%;
+    
+    opacity: 0.5;
+    animation: OpacityPulse 3s infinite ease-out;
+}
+#Location::before{
+    content: "🎯";
+}
+
+.BottomNav {
+    display: flex;
+    margin-top: -1%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #2929298e;
+    border-style: none;
+    border-radius: 10px;
+
+    width: 13vw;
+    height: 1.6vw;
+    padding: 5px;
+
+    font-family: DMSans_Regular;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.BottomNav button {
+    flex: 1;
+    border-style: none;
+    background-color: transparent;
+    font-family: DMSans_Regular;
+    color: white;
+    font-size: 1.2vw;
+
+    transition: flex 0.5s ease-out;
+}
+
+.BottomNav .On{
+    font-size: 1.3vw;
+    color: #6a91dc;
+    flex: 2;
+    animation: LightHover 1.5s infinite ease-out;
+}
+
+.NextPage1 {
+    display: block;
+    margin-top: 0.8%;
+    margin-left: 89%;
+
+    background-color: #292929;
+    border-style: none;
+    border-radius: 10px;
+
+    width: 10vw;
+    height: 2.9vw;
+    
+}
+.NextPage1 div{
+    display: inline-block;
+    font-family: DMSans_Regular;
+    color: white;
+    font-size: 1.5vw;
+    text-align: left;
+    margin-left: -2em;
+}
+.NextPage1 img{
+    position: absolute;
+    margin-left: 0em;
+    margin-top: -0.4em;
+
+    width: 3.4vw;
+    height: 3.05vw;
+}
+
+
+/*Pour ne pas influer sur le BottomNav*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Highlight1 {
+    color: #ec5d3c;
+    transition: letter-spacing 1s ease-out;
+}
+.Highlight2 {
+    color: #64aaea;
+    transition: letter-spacing 1s ease-out;
+}
+.Highlight3 {
+    color: #abc8e1;
+    transition: letter-spacing 1s ease-out;
+}
+.Highlight4 {
+    color: #9a98bd;
+    transition: letter-spacing 1s ease-out;
+}
+.Highlight5 {
+    color: #ffdca4;
+    transition: letter-spacing 1s ease-out;
+}
+.Highlight6 {
+    color: #fea839;
+    transition: letter-spacing 1s ease-out;
+}
+.Highlight7 {
+    color: #93f765;
+    transition: letter-spacing 1s ease-out;
+}
+.Highlight8 {
+    color: #b8ff98;
+    transition: letter-spacing 1s ease-out;
+}
+.mailto {
+    color: beige;
+    transition: letter-spacing 1s ease-out;
+}
+
+/*--------Events--------*/
+.TopBarButton:hover {
+    border-radius: 10px;
+    background-color: #6a91dc;
+    animation: Hover 1.5s infinite ease-out;
+}
+.TopBarButton:active {
+    background-color: #aec3eb;
+    animation: Pulse 0.5s 1;
+}
+
+#De:focus ~ #MonumentsList{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 1vw;
+    height: 8em;
+}
+#MonumentsList:hover{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 1vw;
+    height: 8em;
+}
+
+.MListButton:hover{
+    background-color: #6a91dc;
+    animation: LightHover 1.5s infinite ease-out;
+}
+.MListButton:active{
+    background-color: #aec3eb;
+    animation: Pulse 0.5s 1;
+}
+
+.BottomNav button:hover{
+    flex:2;
+}
+.BottomNav button:active{
+    color: #aec3eb;
+    flex:3;
+}
+
+.NextPage1:hover {
+    border-radius: 10px;
+    background-color: #41609b;
+    animation: Hover 1.5s infinite ease-out;
+}
+.NextPage1:active {
+    background-color: #6a91dc;
+    animation: Pulse 0.5s 1;
+}
+
+[class*="Highlight"]:hover {
+    letter-spacing: 2px;
+}
+.mailto:hover {
+    color:burlywood;
+    letter-spacing: 0.5px;
+}

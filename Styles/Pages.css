@@ -1,0 +1,1815 @@
+/*Fonts*/
+@font-face {
+    font-family: DMSans_Regular; src: url(../Fonts/DMSans-Regular.ttf);
+}
+
+/*Animations*/
+@keyframes Hover{
+    50% {transform:translateY(-2px)}
+}
+@keyframes LightHover{
+    50% {transform:translateY(-1px)}
+}
+@keyframes Title1Hover{
+    25% {transform:translateY(-10px);}
+    75% {transform:translateY(10px);}
+}
+@keyframes LightRotation{
+    25% {transform:rotate(10deg)}
+    75% {transform:rotate(-10deg)}
+}
+@keyframes Pulse{
+    0% {transform:rotate(2deg)}
+}
+@keyframes Greetings{
+    10% {transform:translateY(5em); opacity:1;}
+    75% {transform:translateY(5em); opacity:1;}
+}
+
+/*--------0) ACCUEIL------*/
+#Landscape1 {
+    background-color: white;
+    background-image: url("../Assets/BluePlaneWing.jpg") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 52vw;
+    padding-top: 10px;
+}
+
+#Salutations {
+    display: block;
+    background-color: white;
+    margin-left: auto; margin-right: auto;
+    width: 16vw; height: 2.5vw;
+    border-radius: 50px ;
+
+    font-family:Verdana, Arial;
+    font-size:1.5vw;
+    text-align: center;
+    padding-top: 0.8%;
+    color: #6a91dc;
+    opacity: 0;
+    margin-top: -5em;
+
+    animation: Greetings 3s 1 1s ease-out;
+}
+
+#Title1 {
+    display: block;
+    margin-top: 14%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 7vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #6a91dc;
+
+    position: relative;
+
+    animation: LightHover 1s infinite ease-out;
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+#Home_Teaser {
+    display: block;
+    margin-top: 25%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    opacity: 50%;
+    text-shadow: 0 0 4px , 0 0 2px #2d436d;
+
+    position: relative;
+
+    animation: LightHover 1s infinite ease-out; 
+}
+
+#Landscape2 {
+    background-color: transparent;
+    background-image: url("../Assets/SetTakeOff.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 50vw;
+}
+
+#SamplesFrame {
+    float: left;
+}
+
+.ImageSample {
+    display: block;
+    background-color: #292929;
+   
+    border-color: #151515;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: 0px 0px 5px 2px #aec3eb ;
+    
+}
+#Image1 {
+    margin-left: 2vw;
+    margin-top: 6vw;
+    width: 40vw;
+    height: 18vw;
+
+    background-image: url("../Assets/Japan.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Image2 {
+    margin-left: 2vw;
+    margin-top: 4vw;
+    width: 40vw;
+    height: 15vw;
+
+    background-image: url("../Assets/Rome.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Introduction {
+    display: block;
+    
+    padding-top: 8%;
+    margin-left: 45%;
+    
+    width: 55%;
+    height: 35vw;
+
+    font-size: 4.5vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+
+#NavigateFrame {
+    display: block;
+    margin-top: 2%;
+    margin-left: 60vw;
+    background-color: #151515;
+    border-radius: 10px;
+    width: 28vw;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.NavigateButton {
+    display: inline-block;
+    margin-right: 0px;
+    height: 2.5vw;
+    background-color: #1e1740;
+    border-radius: 10px;
+    border-style: none;
+
+    font-family:Verdana, Arial;
+
+    color: #ec5d3c;
+    font-size: 1.35vw; 
+}
+
+#Return {
+    margin-left: 1vw;
+    color: #6a91dc;    
+}
+#Discover {
+    margin-left: 0%;
+    color: #ec5d3c;
+}
+
+
+/*------Events------*/
+.NavigateButton:hover {
+    border-radius: 10px;
+    background-color: #292929;
+    animation: Hover 1.5s infinite ease-out;
+}
+.NavigateButton:active {
+    background-color: #404040;
+    animation: Pulse 0.5s 1;
+}
+
+#Title1:hover {
+    color: #aec3eb;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+    animation: Title1Hover 4s 5;
+}
+
+
+
+
+/*--------------------------------1) NIAGARA FALLS-----------------------------------*/
+#Niagara_Landscape1 {
+    background-color: white;
+    background-image: url("../Assets/NiagaraFalls1.jpg") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 52vw;
+    padding-top: 10px;
+}
+#Niagara_Title {
+    display: block;
+    margin-top: 10%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 7vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #6a91dc;
+
+    position: relative;
+
+    animation: LightHover 1s infinite ease-out;
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+#Trait1 {
+    background-color: white;
+    box-shadow: 0 0 4px , 0 0 5px #6a91dc;
+    width: 50%;
+    height: 2px;
+    margin-left: 25%;
+}
+#Niagara_Teaser {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #41609b;
+
+    position: relative;
+
+    animation: LightHover 1s infinite ease-out;
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+
+#Niagara_Landscape2 {
+    background-color: #151515;
+    background-image: url("../Assets/Falls1.jpg") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 50vw;
+    padding-top: 10px;
+}
+#Niagara_Sample1 {
+    float: left;
+    margin-left: 2vw;
+    margin-top: 6vw;
+    width: 15vw;
+    height: 26vw;
+
+    display: block;
+    background-color: #292929;
+    border-color: #151515;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: 0px 0px 5px 2px #aec3eb ;
+
+    background-image: url("../Assets/NiagaraFalls3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+}
+
+#Niagara_P1 {
+    display: block;
+    font-family: Calibri;
+
+    margin-top: 2.5em;
+    margin-left: 19%;
+    margin-bottom: 0px;
+;
+    width: 65%;
+    
+    border-radius: 10px;
+
+    /*background: linear-gradient(to right, #5f96d169, #15151500);*/
+
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#Trait2 {
+    background-color: black;
+    width: 25%;
+    height: 5px;
+    margin-top: 1%;
+    margin-left: 19%;
+    margin-bottom: 0px;
+}
+
+#Niagara_P2 {
+    display: block;
+    float: left;
+    font-family: Calibri;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: 0.7em;
+    margin-left: 1.5%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    width: 50%;
+    
+    border-radius: 10px;
+
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#PinIcon {
+    position: absolute;
+    margin-left: -1.2em;
+    margin-top: -1.2em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+}
+
+#Niagara_P3 {
+    display: block;
+    font-family: DMSans_Regular;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: 0.7em;
+    margin-left: 80%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    width: 15%;
+    height: 10em;
+    
+    border-radius: 10px;
+
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#PaperclipIcon {
+    position: absolute;
+    margin-left: -1.2em;
+    margin-top: -2.3em;
+
+    width: 3.8vw;
+    height: 4.5vw;
+}
+
+#Niagara_P4 {
+    display: block;
+    font-family: Calibri;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: -1.5em;
+    margin-left: 5%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    width: 60%;
+    
+    border-radius: 10px;
+
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+#ChatIcon {
+    position: absolute;
+    margin-left: -2.5em;
+    margin-top: -1em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+
+    animation: LightHover 1s infinite ease-out;
+}
+#DoubleChatIcon {
+    position: absolute;
+    margin-top: 0.4em;
+    left: 36.3em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+}
+
+#VideoIcon {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 96%;
+    opacity: 80%;
+    animation: LightHover 1s infinite ease-out;
+}
+#Niagara_SideVideo {
+    display: block;
+    position: absolute;
+
+    background-color: #1b1b1b;
+    width: 0vw; height: 0vw;
+    margin-top: 5%;
+    margin-left: 98%;
+    border-radius: 10px;
+    padding: 1%;
+  
+    opacity: 0;
+    z-index: 2;
+    transition: all 1s ease-out, height 0.5s, opacity, 0.5s;
+}
+#Niagara_Video1 { /*Check Later*/
+    display: block;
+    position: relative;
+    
+    background-color: #151515;
+    width: 99%; height: 99%;
+    border-radius: 10px;
+  
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+/*------Events------*/
+
+#Niagara_SideVideo:hover {
+    display: block;
+    opacity: 1;
+    margin-left: 47%;
+    width: 50vw; height: 24vw;
+}
+
+#VideoIcon:hover + #Niagara_SideVideo { /*Check Later*/
+    display: block;
+    opacity: 1;
+    margin-left: 47%;
+    width: 50vw; height: 24vw;
+}
+
+
+/*--------------------------------2) TOUR EIFFEL-----------------------------------*/
+
+
+#Eiffel_Landscape1 {
+    background-color: white;
+    background-image: url("../Assets/Eiffel4.jpg") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 52vw;
+    padding-top: 10px;
+}
+#Eiffel_Title {
+    display: block;
+    margin-top: 12%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 7vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #6a91dc;
+
+    position: relative;
+
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+#Eiffel_Trait1 {
+    background-color: white;
+    box-shadow: 0 0 4px , 0 0 5px #6a91dc;
+    width: 50%;
+    height: 2px;
+    margin-left: 25%;
+}
+#Eiffel_Teaser {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #41609b;
+
+    position: relative;
+
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+
+#Eiffel_Landscape2 {
+    background-color: #151515;
+    background-image: url("../Assets/Eiffel1.jpg") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 50vw;
+    padding-top: 10px;
+}
+
+#Eiffel_Sample1 {
+    float: left;
+    margin-left: 2vw;
+    margin-top: 6vw;
+    width: 15vw;
+    height: 26vw;
+
+    display: block;
+    background-color: #292929;
+    border-color: #151515;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: 0px 0px 5px 2px #aec3eb ;
+
+    background-image: url("../Assets/EiffelPortrait.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+}
+
+#Eiffel_P1 {
+    display: block;
+    font-family: Calibri;
+
+    margin-top: 2.5em;
+    margin-left: 19%;
+    margin-bottom: 0px;
+;
+    width: 65%;
+    
+    border-radius: 10px;
+
+    /*background: linear-gradient(to right, #5f96d169, #15151500);*/
+
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#Trait2 {
+    background-color: black;
+    width: 25%;
+    height: 5px;
+    margin-top: 1%;
+    margin-left: 19%;
+    margin-bottom: 0px;
+}
+
+#Eiffel_P2 {
+    display: block;
+    float: left;
+    font-family: Calibri;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: 0.7em;
+    margin-left: 1.5%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    width: 50%;
+    
+    border-radius: 10px;
+
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#PinIcon {
+    position: absolute;
+    margin-left: -1.2em;
+    margin-top: -1.2em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+}
+
+#Eiffel_P3 {
+    display: block;
+    font-family: DMSans_Regular;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: 0.7em;
+    margin-left: 80%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    padding-top: 2.8%;
+    padding-bottom: 2.5%;
+    width: 15%;
+    height: 10em;
+    
+    border-radius: 10px;
+
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#Eiffel_PaperclipIcon {
+    position: absolute;
+    margin-left: -1.2em;
+    margin-top: -3.4em;
+
+    width: 3.8vw;
+    height: 4.5vw;
+}
+
+#Eiffel_P4 {
+    display: block;
+    font-family: Calibri;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: -1.5em;
+    margin-left: 5%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    width: 60%;
+    
+    border-radius: 10px;
+
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+#Eiffel_ChatIcon {
+    position: absolute;
+    margin-left: -2.5em;
+    margin-top: -1em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+
+    animation: LightHover 1s infinite ease-out;
+}
+#Eiffel_DoubleChatIcon {
+    position: absolute;
+    margin-top: 0.4em;
+    left: 36.3em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+}
+
+#VideoIcon {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 96%;
+    opacity: 80%;
+    animation: LightHover 1s infinite ease-out;
+}
+#Eiffel_SideVideo {
+    display: block;
+    position: absolute;
+
+    background-color: #1b1b1b;
+    width: 0vw; height: 0vw;
+    margin-top: 5%;
+    margin-left: 98%;
+    border-radius: 10px;
+    padding: 1%;
+  
+    opacity: 0;
+    z-index: 2;
+    transition: all 1s ease-out, height 0.5s, opacity, 0.5s;
+}
+#Eiffel_Video1 { /*Check Later*/
+    display: block;
+    position: relative;
+    
+    background-color: #151515;
+    width: 99%; height: 99%;
+    border-radius: 10px;
+  
+    opacity: 1;
+    z-index: 2;
+}
+
+
+/*------Events------*/
+
+
+#Eiffel_SideVideo:hover {
+    display: block;
+    opacity: 1;
+    margin-left: 47%;
+    width: 50vw; height: 24vw;
+}
+
+#VideoIcon:hover + #Eiffel_SideVideo { /*Check Later*/
+    display: block;
+    opacity: 1;
+    margin-left: 47%;
+    width: 50vw; height: 24vw;
+}
+
+
+
+/*--------------------------------3) TAJ MAHAL-----------------------------------*/
+
+
+#Mahal_Landscape1 {
+    background-color: white;
+    background-image: url("../Assets/Mahal1.jpg") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 52vw;
+    padding-top: 10px;
+}
+#Mahal_Title {
+    display: block;
+    margin-top: 12%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 7vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #6a91dc;
+
+    position: relative;
+
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+#Mahal_Trait1 {
+    background-color: white;
+    box-shadow: 0 0 4px , 0 0 5px #6a91dc;
+    width: 50%;
+    height: 2px;
+    margin-left: 25%;
+}
+#Mahal_Teaser {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #41609b;
+
+    position: relative;
+
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+
+#Mahal_Landscape2 {
+    padding-top: 10px;
+    width: 100%;
+    height: 50vw;
+    background-color: #151515;
+    background-image: url("../Assets/Mahal4.png") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#Mahal_Sample1 {
+    float: left;
+    margin-left: 2vw;
+    margin-top: 6vw;
+    width: 15vw;
+    height: 26vw;
+
+    display: block;
+    background-color: #292929;
+    border-color: #151515;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: 0px 0px 5px 2px #aec3eb ;
+
+    background-image: url("../Assets/MahalPortrait2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -80px;
+    
+}
+
+#Mahal_P1 {
+    display: block;
+    font-family: Calibri;
+
+    margin-top: 2.5em;
+    margin-left: 19%;
+    margin-bottom: 0px;
+;
+    width: 65%;
+    
+    border-radius: 10px;
+
+    /*background: linear-gradient(to right, #5f96d169, #15151500);*/
+
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    text-shadow: 0 0 2px , 0 0 5px #101300;
+    
+    
+}
+#Trait2 {
+    background-color: black;
+    width: 25%;
+    height: 5px;
+    margin-top: 1%;
+    margin-left: 19%;
+    margin-bottom: 0px;
+}
+
+#Mahal_P2 {
+    display: block;
+    float: left;
+    font-family: Calibri;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: 0.7em;
+    margin-left: 1.5%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    width: 50%;
+    
+    border-radius: 10px;
+
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#PinIcon {
+    position: absolute;
+    margin-left: -1.2em;
+    margin-top: -1.2em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+}
+
+#Mahal_P3 {
+    display: block;
+    font-family: DMSans_Regular;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: 0.7em;
+    margin-left: 80%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    padding-top: 2.8%;
+    padding-bottom: 2.5%;
+    width: 15%;
+    height: 10em;
+    
+    border-radius: 10px;
+
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#Mahal_PaperclipIcon {
+    position: absolute;
+    margin-left: -1.2em;
+    margin-top: -3.4em;
+
+    width: 3.8vw;
+    height: 4.5vw;
+}
+
+#Mahal_P4 {
+    display: block;
+    font-family: Calibri;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: -1.5em;
+    margin-left: 5%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    width: 60%;
+    
+    border-radius: 10px;
+
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+#Mahal_ChatIcon {
+    position: absolute;
+    margin-left: -2.5em;
+    margin-top: -1em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+
+    animation: LightHover 1s infinite ease-out;
+}
+#Mahal_DoubleChatIcon {
+    position: absolute;
+    margin-top: 0.4em;
+    left: 36.3em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+}
+
+#VideoIcon {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 96%;
+    opacity: 80%;
+    animation: LightHover 1s infinite ease-out;
+}
+#Mahal_SideVideo {
+    display: block;
+    position: absolute;
+
+    background-color: #1b1b1b;
+    width: 0vw; height: 0vw;
+    margin-top: 5%;
+    margin-left: 98%;
+    border-radius: 10px;
+    padding: 1%;
+  
+    opacity: 0;
+    z-index: 2;
+    transition: all 1s ease-out, height 0.5s, opacity, 0.5s;
+}
+#Mahal_Video1 { /*Check Later*/
+    display: block;
+    position: relative;
+    
+    background-color: #151515;
+    width: 99%; height: 99%;
+    border-radius: 10px;
+  
+    opacity: 1;
+    z-index: 2;
+}
+
+
+/*------Events------*/
+
+#Mahal_SideVideo:hover {
+    display: block;
+    opacity: 1;
+    margin-left: 47%;
+    width: 50vw; height: 24vw;
+}
+
+#VideoIcon:hover + #Mahal_SideVideo { /*Check Later*/
+    display: block;
+    opacity: 1;
+    margin-left: 47%;
+    width: 50vw; height: 24vw;
+}
+
+
+
+/*--------------------------------4) PYRAMIDES-----------------------------------*/
+
+
+#Pyramids_Landscape1 {
+    background-color: white;
+    background-image: url("../Assets/Pyramids2.jpg") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 52vw;
+    padding-top: 10px;
+}
+#Pyramids_Title {
+    display: block;
+    margin-top: 10%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 7vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #000000;
+
+    position: relative;
+
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+#Pyramids_Trait1 {
+    background-color: white;
+    box-shadow: 0 0 4px , 0 0 5px #6a91dc;
+    width: 50%;
+    height: 2px;
+    margin-left: 25%;
+}
+#Pyramids_Teaser {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #000000;
+
+    position: relative;
+
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+
+#Pyramids_Landscape2 {
+    padding-top: 10px;
+    width: 100%;
+    height: 50vw;
+    background-color: #151515;
+    background-image: url("../Assets/Pyramids1.jpg") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#Pyramids_Sample1 {
+    float: left;
+    margin-left: 2vw;
+    margin-top: 6vw;
+    width: 15vw;
+    height: 26vw;
+
+    display: block;
+    background-color: #292929;
+    border-color: #151515;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: 0px 0px 5px 2px #aec3eb ;
+
+    background-image: url("../Assets/PyramidsPortrait1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#Pyramids_P1 {
+    display: block;
+    font-family: Calibri;
+
+    margin-top: 2.5em;
+    margin-left: 19%;
+    margin-bottom: 0px;
+;
+    width: 65%;
+    
+    border-radius: 10px;
+
+    /*background: linear-gradient(to right, #5f96d169, #15151500);*/
+
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    text-shadow: 0 0 2px , 0 0 5px #101300;
+    
+    
+}
+#Trait2 {
+    background-color: black;
+    width: 25%;
+    height: 5px;
+    margin-top: 1%;
+    margin-left: 19%;
+    margin-bottom: 0px;
+}
+
+#Pyramids_P2 {
+    display: block;
+    float: left;
+    font-family: Calibri;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: 0.7em;
+    margin-left: 1.5%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    width: 50%;
+    
+    border-radius: 10px;
+
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#PinIcon {
+    position: absolute;
+    margin-left: -1.2em;
+    margin-top: -1.2em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+}
+
+#Pyramids_P3 {
+    display: block;
+    font-family: DMSans_Regular;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: 0.7em;
+    margin-left: 80%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    padding-top: 2.8%;
+    padding-bottom: 2.5%;
+    width: 15%;
+    
+    
+    border-radius: 10px;
+
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#Pyramids_PaperclipIcon {
+    position: absolute;
+    margin-left: -1.2em;
+    margin-top: -3.4em;
+
+    width: 3.8vw;
+    height: 4.5vw;
+}
+
+#Pyramids_P4 {
+    display: block;
+    font-family: Calibri;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: -1.5em;
+    margin-left: 5%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    width: 60%;
+    
+    border-radius: 10px;
+
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+#Pyramids_ChatIcon {
+    position: absolute;
+    margin-left: -2.5em;
+    margin-top: -1em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+
+    animation: LightHover 1s infinite ease-out;
+}
+#Pyramids_DoubleChatIcon {
+    position: absolute;
+    margin-top: 0.4em;
+    left: 36.3em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+}
+
+#VideoIcon {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 96%;
+    opacity: 80%;
+    animation: LightHover 1s infinite ease-out;
+}
+#Pyramids_SideVideo {
+    display: block;
+    position: absolute;
+
+    background-color: #1b1b1b;
+    width: 0vw; height: 0vw;
+    margin-top: 5%;
+    margin-left: 98%;
+    border-radius: 10px;
+    padding: 1%;
+  
+    opacity: 0;
+    z-index: 2;
+    transition: all 1s ease-out, height 0.5s, opacity, 0.5s;
+}
+#Pyramids_Video1 { /*Check Later*/
+    display: block;
+    position: relative;
+    
+    background-color: #151515;
+    width: 99%; height: 99%;
+    border-radius: 10px;
+  
+    opacity: 1;
+    z-index: 2;
+}
+
+#Pyramids_Title2 {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    color: #ffe7bc;
+    text-shadow: 0 0 4px , 0 0 5px #ffe8c4;
+
+    position: relative;
+
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+
+#Pyramids_Landscape3 {
+    background-color: white;
+    background-image: url("../Assets/Pyramids1.jpg") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 52vw;
+    padding-top: 10px;
+}
+
+#PyramidsFrame {
+    display: flex;
+    background-color: transparent;
+    width: 75%; height: 40vw;
+    margin-left: 12.5%;
+    margin-top: 8%;
+}
+
+.PyramidItem {
+    flex: 1;
+    background-color: #151515ce;
+    margin: 5px;
+
+    border-radius: 10px;
+    transition: flex 1s ease-out;
+}
+
+
+.PyramidThumbnail {
+    z-index: 3;
+    background-color: black;
+    width: 95%; height: 40%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.PyramidInfo {
+    display: grid;
+    z-index: 1;
+    background-color: transparent;
+    width: 90%; height: 56.5%;
+    margin-left: 5%;
+    margin-top: 0px;
+
+    border-radius: 0px 0px 5px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.PyramidDescription {
+    opacity: 0;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.897);
+    width: 100%; height: 1%;
+    
+    margin-top: 0px;
+
+    border-radius: 0px 0px 5px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 2vw;
+
+    font-family: Calibri;
+    color: wheat;
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+
+    transition: all 1s ease-out;
+}
+.PyramidName {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 100%; height: inherit;
+   
+    margin-top: 0px;
+
+    border-radius: 0px 0px 5px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 15%;
+
+    background-image: url("../Assets/Kheops2.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    font-family: Calibri;
+    color: rgba(245, 222, 179, 0.288);
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+
+    transition: all 1s ease-out;
+}
+
+#PyThumb1 {
+    background-image: url("../Assets/Kheops2.jpg");
+}
+#PyThumb2 {
+    background-image: url("../Assets/Khafre2.avif");
+}
+#PyThumb3 {
+    background-image: url("../Assets/Menkaure.jpg");
+}
+
+[class="BottomNav Pyramids"] { /*Ajuster la bottom nav*/
+    margin-top: -2.5%;
+}
+[class="NextPage1 Pyramids"] { /*Ajuster le button nextpage*/
+    margin-top: 0.5%;
+}
+
+/*------Events------*/
+
+#Pyramids_SideVideo:hover {
+    display: block;
+    opacity: 1;
+    margin-left: 47%;
+    width: 50vw; height: 24vw;
+}
+
+#VideoIcon:hover + #Pyramids_SideVideo { /*Check Later*/
+    display: block;
+    opacity: 1;
+    margin-left: 47%;
+    width: 50vw; height: 24vw;
+}
+
+.PyramidThumbnail:hover ~ .PyramidInfo > .PyramidDescription {
+    height: 90%;
+    opacity: 1;
+    font-size: 1.6vw;
+}
+.PyramidThumbnail:hover ~ .PyramidInfo > .PyramidName {
+    opacity: 0;
+}
+.PyramidItem:has(> .PyramidThumbnail:hover) {
+    flex: 2;
+}
+
+
+
+/*--------------------------------5) SINE SALOUM-----------------------------------*/
+
+
+#Sine_Landscape1 {
+    background-color: white;
+    background-image: url("../Assets/SineSaloum1.png") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 52vw;
+    padding-top: 10px;
+}
+#Sine_Title {
+    display: block;
+    margin-top: 12%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 7vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #6a91dc;
+
+    position: relative;
+
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+#Sine_Trait1 {
+    background-color: white;
+    box-shadow: 0 0 4px , 0 0 5px #6a91dc;
+    width: 50%;
+    height: 2px;
+    margin-left: 25%;
+}
+#Sine_Teaser {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #41609b;
+
+    position: relative;
+
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+
+#Sine_Landscape2 {
+    padding-top: 10px;
+    width: 100%;
+    height: 50vw;
+    background-color: #151515;
+    background-image: url("../Assets/SineSaloum2.png") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#Sine_Sample1 {
+    float: left;
+    margin-left: 2vw;
+    margin-top: 6vw;
+    width: 15vw;
+    height: 26vw;
+
+    display: block;
+    background-color: #292929;
+    border-color: #151515;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: 0px 0px 5px 2px #aec3eb ;
+
+    background-image: url("../Assets/Delta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -250px;
+    
+}
+
+#Sine_P1 {
+    display: block;
+    font-family: Calibri;
+
+    margin-top: 2.5em;
+    margin-left: 19%;
+    margin-bottom: 0px;
+;
+    width: 65%;
+    
+    border-radius: 10px;
+
+    /*background: linear-gradient(to right, #5f96d169, #15151500);*/
+
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    text-shadow: 0 0 2px , 0 0 5px #101300;
+    
+    
+}
+#Trait2 {
+    background-color: black;
+    width: 25%;
+    height: 5px;
+    margin-top: 1%;
+    margin-left: 19%;
+    margin-bottom: 0px;
+}
+
+#Sine_P2 {
+    display: block;
+    float: left;
+    font-family: Calibri;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: 0.7em;
+    margin-left: 1.5%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    width: 50%;
+    
+    border-radius: 10px;
+
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#PinIcon {
+    position: absolute;
+    margin-left: -1.2em;
+    margin-top: -1.2em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+}
+
+#Sine_P3 {
+    display: block;
+    font-family: DMSans_Regular;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: 0em;
+    margin-left: 80%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    padding-top: 2.8%;
+    padding-bottom: 1%;
+    width: 15%;
+    
+    
+    border-radius: 10px;
+
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+#Sine_PaperclipIcon {
+    position: absolute;
+    margin-left: -1.4em;
+    margin-top: -3.5em;
+
+    width: 3.8vw;
+    height: 4.5vw;
+}
+
+#Sine_P4 {
+    display: block;
+    font-family: Calibri;
+
+    background-color: #292929;
+    border-radius: 8px;
+
+    margin-top: -1.5em;
+    margin-left: 5%;
+    margin-bottom: 0px;
+
+    padding: 0.5%;
+    width: 60%;
+    
+    border-radius: 10px;
+
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+#Sine_ChatIcon {
+    position: absolute;
+    margin-left: -2.5em;
+    margin-top: -1em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+
+    animation: LightHover 1s infinite ease-out;
+}
+#Sine_DoubleChatIcon {
+    position: absolute;
+    margin-top: 0.4em;
+    left: 36.3em;
+
+    width: 3.8vw;
+    height: 3.8vw;
+}
+
+#VideoIcon {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 96%;
+    opacity: 80%;
+    animation: LightHover 1s infinite ease-out;
+}
+#Sine_SideVideo {
+    display: block;
+    position: absolute;
+
+    background-color: #1b1b1b;
+    width: 0vw; height: 0vw;
+    margin-top: 5%;
+    margin-left: 98%;
+    border-radius: 10px;
+    padding: 1%;
+  
+    opacity: 0;
+    z-index: 2;
+    transition: all 1s ease-out, height 0.5s, opacity, 0.5s;
+}
+#Sine_Video1 { /*Check Later*/
+    display: block;
+    position: relative;
+    
+    background-color: #151515;
+    width: 99%; height: 99%;
+    border-radius: 10px;
+  
+    opacity: 1;
+    z-index: 2;
+}
+
+[class="BottomNav Sine"] { /*Ajuster la bottom nav*/
+    margin-top: -2.2%;
+}
+[class="NextPage1 Sine"] { /*Ajuster le button nextpage*/
+    margin-top: 0.5%;
+}
+
+
+/*------Events------*/
+
+#Sine_SideVideo:hover {
+    display: block;
+    opacity: 1;
+    margin-left: 47%;
+    width: 50vw; height: 24vw;
+}
+
+#VideoIcon:hover + #Sine_SideVideo { /*Check Later*/
+    display: block;
+    opacity: 1;
+    margin-left: 47%;
+    width: 50vw; height: 24vw;
+}
+
+
+
+/*--------------------------------FIN) A PROPOS-----------------------------------*/
+#Propos_Landscape1 {
+    background-color: white;
+    background-image: url("../Assets/OverClouds.png") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 52vw;
+    padding-top: 10px;
+}
+#Propos_Title {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto; margin-right: auto;
+    
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px , 0 0 5px #6a91dc;
+
+    position: relative;
+
+    animation: LightHover 1s infinite ease-out;
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+#Trait1 {
+    background-color: white;
+    box-shadow: 0 0 4px , 0 0 5px #6a91dc;
+    width: 50%;
+    height: 2px;
+    margin-left: 25%;
+}
+#Propos_Teaser {
+    display: block;
+    margin-top: 2.5%;
+    margin-left: auto; margin-right: auto;
+    
+    font-family: calibri;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px #41609b, 0 0 5px #000000;
+
+    position: relative;
+    transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+}
+
+#InfosFrame {
+    display: flex;
+    background-color: transparent;
+    width: 95%; height: 32vw;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    gap: 5%;
+}
+
+.InfosGroup {
+    flex: 1;
+    background-color: #0741632c;
+    border-radius: 10px;
+   
+}
+.IGroupName {
+    margin-left: 40%;
+
+    font-family: calibri;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px #41609b, 0 0 5px #000000;  
+}
+#Propos_Trait1 {
+    background-color: white;
+    box-shadow: 0 0 4px , 0 0 5px #6a91dc;
+    width: 50%;
+    height: 2px;
+    margin-left: 25%;
+}
+.IGroupDesc {
+    padding-left: 5%; padding-right: 5%;
+    word-spacing: 1px;
+    font-family: calibri;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: left;
+    color:white;
+    text-shadow: 0 0 4px #4e77c4, 0 0 5px #000000;  
+}
