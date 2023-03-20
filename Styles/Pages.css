@@ -193,12 +193,12 @@
 
 
 /*------Events------*/
-.NavigateButton:hover {
+#Discover:hover {
     border-radius: 10px;
     background-color: #292929;
     animation: Hover 1.5s infinite ease-out;
 }
-.NavigateButton:active {
+#Discover:active {
     background-color: #404040;
     animation: Pulse 0.5s 1;
 }
