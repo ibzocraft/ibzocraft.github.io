@@ -29,7 +29,7 @@
 /*--------0) ACCUEIL------*/
 #Landscape1 {
     background-color: white;
-    background-image: url("../Assets/BluePlaneWing.jpg") ;
+    background-image: url("../Assets/Field2.jpg") ;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -91,7 +91,8 @@
 
 #Landscape2 {
     background-color: transparent;
-    background-image: url("../Assets/SetTakeOff.jpg") ;
+    background-attachment: fixed;
+    background-image: url("../Assets/Field3.jpg") ;
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -100,38 +101,64 @@
 
 #SamplesFrame {
     float: left;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+    background-color: transparent;
 
+    margin-top: 5vw;
+    margin-left: 3vw;
+    width: 35vw; height: 40vw;
+    
+}
+.SamplesLink {
+    flex: 1;
+    transition: all 1s ease-out;
+}
 .ImageSample {
     display: block;
     background-color: #292929;
-   
     border-color: #151515;
     border-style: solid;
     border-width: 0px;
-    box-shadow: 0px 0px 5px 2px #aec3eb ;
-    
-}
-#Image1 {
-    margin-left: 2vw;
-    margin-top: 6vw;
-    width: 40vw;
-    height: 18vw;
+    box-shadow: 0px 0px 5px 2px black ;
 
-    background-image: url("../Assets/Japan.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%; height: 100%;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    line-height: 8vw;
+    color: rgba(0, 0, 0, 0.123);
+    
+    transition: all 1s ease-out;
+}
+
+#Image1 {
+    background-image: url("../Assets/NiagaraFalls1.jpg") ;
+    background-repeat: no-repeat; background-size: cover;
+    background-position: 0em;
 }
 #Image2 {
-    margin-left: 2vw;
-    margin-top: 4vw;
-    width: 40vw;
-    height: 15vw;
-
-    background-image: url("../Assets/Rome.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../Assets/Eiffel4.jpg") ;
+    background-repeat: no-repeat; background-size: cover;
+    background-position: 0em;
 }
+#Image3 {
+    background-image: url("../Assets/Mahal1.jpg") ;
+    background-repeat: no-repeat; background-size: cover;
+    background-position: 0em -20px;
+}
+#Image4 {
+    background-image: url("../Assets/Pyramids2.jpg") ;
+    background-repeat: no-repeat; background-size: cover;
+    background-position: 0em;
+}
+#Image5 {
+    background-image: url("../Assets/SineSaloum2.png") ;
+    background-repeat: no-repeat; background-size: cover;
+    background-position: 0em -100px;
+}
+
 
 #Introduction {
     display: block;
@@ -148,40 +175,19 @@
     color: white;
 }
 
-#NavigateFrame {
-    display: block;
-    margin-top: 2%;
-    margin-left: 60vw;
-    background-color: #151515;
-    border-radius: 10px;
-    width: 28vw;
-    
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.NavigateButton {
+#Discover {
     display: inline-block;
-    margin-right: 0px;
+    margin-top: 1%;
+    margin-left: 85%;
+    width: 13vw;
     height: 2.5vw;
-    background-color: #1e1740;
+    background-color: #292929;
     border-radius: 10px;
     border-style: none;
 
     font-family:Verdana, Arial;
 
-    color: #ec5d3c;
     font-size: 1.35vw; 
-}
-
-#Return {
-    margin-left: 1vw;
-    color: #6a91dc;    
-}
-#Discover {
-    margin-left: 0%;
     color: #ec5d3c;
 }
 
@@ -198,12 +204,21 @@
 }
 
 #Title1:hover {
-    color: #aec3eb;
+    color: rgb(255, 250, 241);
     word-spacing: 10px;
     letter-spacing: 4px;
     animation: Title1Hover 4s 5;
 }
 
+.ImageSample:hover {
+    box-shadow: 0px 0px 5px 2px wheat ;
+
+    color: white;
+    text-shadow: 0 0 1px , 0 0 5px wheat;
+    letter-spacing: 10px;
+    transform: skewX(-5deg);
+    margin-left: 2vw;
+}
 
 
 
